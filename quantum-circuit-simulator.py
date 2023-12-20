@@ -50,7 +50,7 @@ class Qstate:
 
     def cnot(self, i):
         # CNOT gate (Controlled-NOT): A two-qubit gate that flips the second (target) qubit if the first (control) qubit is |1>.
-        # It is essential for creating entanglement between qubits.
+        # It is essential for creating entanglement between qubits by correlating them.
         cnot_matrix = np.array([
             [1, 0, 0, 0],  # If control qubit is |0>, do nothing.
             [0, 1, 0, 0],
